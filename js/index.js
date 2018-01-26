@@ -1,4 +1,7 @@
 // vreate an array of objects,
+
+// write a function that loops through this array of objects and when run on the array, posts to the console
+// "You have seen +movie title  + -rating."" or the inverse.
 var movies = [
     {
       title: "Harry Potter",
@@ -32,8 +35,8 @@ var movies = [
 function seen(arr) {
   for(var i=0; i<arr.length; i++){
     if(arr[i].watched !== true){
-      console.log("You have not seen" + arr[i].title,+" "+ "with a rating of:"+ arr[i].rating);
-    }else{console.log("Yay you have watched" + arr[i].title,+""+ "with a rating of:"+ arr[i].rating);
+      console.log("You have not seen " + arr[i].title +","+ "with a rating of: "+ "- "+ arr[i].rating);
+    }else{console.log("Yay! you have watched" + arr[i].title +" ,"+ "with a rating of: "+ "- " +arr[i].rating);
       }
   }
 };
